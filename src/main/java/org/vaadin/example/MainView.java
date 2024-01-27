@@ -32,8 +32,9 @@ public class MainView extends VerticalLayout {
     public MainView(@Autowired GreetService service) {
 
         LayoutExercise layoutExercise = new LayoutExercise();
+        setSizeFull();
         layoutExercise.setSpacing(false);
-        layoutExercise.setPadding(false);
+        layoutExercise.setPadding(true);
         layoutExercise.setMargin(false);
         add(layoutExercise);
     }
